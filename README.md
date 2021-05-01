@@ -5,11 +5,11 @@
 
 # firebase v6 All
 
-필요 node package List
+## 필요 node package List
 
-@react-native-community/push-notification-ios
-react-native-push-notification
-@react-native-firebase/messaging
+## @react-native-community/push-notification-ios
+## react-native-push-notification
+##  @react-native-firebase/messaging
 
 KR
 
