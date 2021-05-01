@@ -68,6 +68,8 @@ npx react-native run-ios
 이제 사용해볼까요!?
 
 
+# 기능 제공 [추가기능 패치예정]
+
 ```sh
 dependencies - 
 android/buld.gradle
