@@ -14,8 +14,8 @@ const Fbcomponent = props => {
   return null;
 };
 
-const androidNotifi = () => {
-  messaging().onMessage(async remoteMessage => {
+const androidNotifi = async () => {
+  await messaging().onMessage(async remoteMessage => {
     PushNotification.localNotification({
       message: remoteMessage.notification.body,
       title: remoteMessage.notification.title,
@@ -25,8 +25,8 @@ const androidNotifi = () => {
   });
 };
 
-const iosNotifi = () => {
-  const unsubscribe = messaging().onMessage(async remoteMessage => {
+const iosNotifi = async () => {
+  await messaging().onMessage(async remoteMessage => {
     PushNotificationIos.addNotificationRequest({
       id: remoteMessage.messageId,
       body: remoteMessage.notification.body,
@@ -38,7 +38,8 @@ const iosNotifi = () => {
 
 const getFcmToken = async () => {
   const token = await messaging().getToken();
-  console.log(tok);
+  return token;
 };
 
+export {getFcmToken};
 export default Fbcomponent;
