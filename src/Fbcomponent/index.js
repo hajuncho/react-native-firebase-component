@@ -3,8 +3,8 @@ import {Alert, Platform} from 'react-native';
 import messaging from '@react-native-firebase/messaging';
 import PushNotification from 'react-native-push-notification';
 import PushNotificationIos from '@react-native-community/push-notification-ios';
-//IOS 경우
-const Fbcomponent = props => {
+
+const Fbcomponent = () => {
   useEffect(() => {
     const unsubscribe =
       Platform.OS === 'android' ? androidNotifi() : iosNotifi();

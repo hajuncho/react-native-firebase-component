@@ -5,7 +5,7 @@
  * @format
  * @flow strict-local
  */
-import Fbcomponent, {getFcmToken} from './src/Fbcomponent';
+import Fbcomponent, {getFcmToken} from '@hajun/react-native-firebase-component';
 import React, {useEffect} from 'react';
 import {
   SafeAreaView,
