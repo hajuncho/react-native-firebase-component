@@ -22,28 +22,48 @@ android/build.gradle
 # FireBaseConsol
 프로젝트 생성및 기본설정
 
-# 필요파일
+-- 필요파일
+
+
 android/app/google-services.json
 
-
-# 패키치 네임은
-
-APP/APP/SRC/AndroidManifest.xml 파일 상단의 package 네임과 똑같이해주세요 :D
-
-google-services.json
-발급
-
-# android
-google-services.json 파일을  app 폴더 안속에 넣어주세요
+root/googleService-Info.plist
 
 
-# IOS
+안드로이드 발급
+
+패키치 네임은 APP/APP/SRC/AndroidManifest.xml 
+파일 상단의 package 네임과 똑같이해주세요 :D
+
+아이폰 발급
 
 IOS 번들ID 설정
 Xcode -> General Tab
 Bundle Identifier BundleID ID 를넣어주세요!
-
 googleService-Info.plist 다운로드
+
+google-services.json 파일은  android/app 폴더 안속에 넣어주세요
+
+googleService-Info.plist 파일은 루트 디렉터리 안속에 넣어주세요.
+
+# android
+```sh
+dependencies - 
+android/buld.gradle
+
+   디펜던시 쪽에 추가하여주세요
+  [+] classpath 'com.google.gms:google-services:4.3.3'
+ 
+android/app/build.gradle
+
+  최상단에 추가하여주세요
+  
+  [+] apply plugin: 'com.google.gms.google-services'  
+```
+
+# IOS
+
+
 
 기본경로에 넣어주세요 
 
@@ -70,19 +90,7 @@ npx react-native run-ios
 
 # 기능 제공 [추가기능 패치예정]
 
-```sh
-dependencies - 
-android/buld.gradle
 
-   디펜던시 쪽에 추가하여주세요
-  [+] classpath 'com.google.gms:google-services:4.3.3'
- 
-android/app/build.gradle
-
-  최상단에 추가하여주세요
-  
-  [+] apply plugin: 'com.google.gms.google-services'  
-```
 
 
 
