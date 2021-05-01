@@ -2,6 +2,9 @@
 ### 👨‍👨‍👦 
 # 아주 간단하고 쉬운 파이어베이스 푸쉬알림
 
+
+# firebase v6 All
+
 필요 node package List
 
 @react-native-community/push-notification-ios
