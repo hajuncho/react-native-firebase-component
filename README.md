@@ -77,13 +77,21 @@ IOS SDK 세팅
 /ios/당신의프로젝트/AppDelegate.m 파일을 열어주세요.
 #import <Firebase.h>
 
-didFinishLaunchingWithOptions 메서드수정
+didFinishLaunchingWithOptions 수정
+
+
+``` sh
+
 
 추가해주세요
 
 if ([FIRApp defaultApp] == nil) {
     [FIRApp configure];
   }
+  ```
+  
+  
+  
   ```sh
   cd ios/
 pod install --repo-update
