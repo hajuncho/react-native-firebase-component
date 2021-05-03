@@ -8,6 +8,7 @@
  필요 node package List
 
  @react-native-community/push-notification-ios
+ 
  @react-native-firebase/app
 
  react-native-push-notification
