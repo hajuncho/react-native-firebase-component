@@ -66,9 +66,6 @@ android/app/build.gradle
   최상단에 추가하여주세요
   
   [+] apply plugin: 'com.google.gms.google-services'  
-  디펜던시에 추가해주세요 
-  [+] implementation platform('com.google.firebase:firebase-bom:26.2.0')
-  [+] implementation 'com.google.firebase:firebase-analytics'
 ```
 
 # IOS
