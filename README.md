@@ -10,7 +10,7 @@
  @react-native-community/push-notification-ios
  
  react-native-push-notification
- 
+ react-native-firebase/app
   @react-native-firebase/messaging
 
 KR
