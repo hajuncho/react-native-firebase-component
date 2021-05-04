@@ -83,6 +83,7 @@ didFinishLaunchingWithOptions 수정
 
 
 ``` sh
+#import <Firebase.h> 
 
 
 추가해주세요
