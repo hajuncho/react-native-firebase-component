@@ -7,14 +7,13 @@
 
  필요 node package List
 
- @react-native-community/push-notification-ios
+
  
  @react-native-firebase/app
 
- react-native-push-notification
- react-native-firebase/app
-  @react-native-firebase/messaging
-
+import messaging from "@react-native-firebase/messaging";
+import PushNotification from "react-native-push-notification";
+import PushNotificationIos from "@react-native-community/push-notification-ios";
 KR
 
 사용법
